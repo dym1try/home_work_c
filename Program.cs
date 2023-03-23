@@ -1,9 +1,14 @@
 ﻿// Считываем данные с консоли
-string? inline = Console.ReadLine();
+string? inLine = Console.ReadLine();
 
 // Проверяем, что данные не пустые
-if(inline!=null)
+if(inLine!=null);
 {
-    int inNumber = int.Parse();
+    // Парсим введенное число
+    int inNumber = int.Parse(inLine);
 
+    int outNumber = inNumber*inNumber;
+
+    // Выводим данные в консоль
+    Console.WriteLine(outNumber);
 }
